@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *{
+        padding: 0;margin: 0px;
+    }
+   
+    body {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 130vh;
+        
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f4;
+    }
+
+    .accordion {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .accordion-item {
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+      overflow: hidden;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .accordion-header {
+      padding: 15px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: #fff;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 15px;
+      line-height: 1.6;
+    }
+
+    .accordion-item.active .accordion-content {
+      display: block;
+    }
+
+    .accordion-item.active .accordion-header {
+      background-color: #297fb8;
+    }
+
+    .accordion img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="accordion" id="accordion">
+
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const accordionContainer = document.getElementById('accordion');
+
+  
+  const cities = [
+    {
+      name: 'Mumbai',
+      description: 'Mumbai, the financial capital of India, is a bustling city known for its fast-paced lifestyle and diverse culture. Explore the vibrant street markets, enjoy the scenic views along the Marine Drive, and visit the historic Gateway of India. The city never sleeps, offering a unique blend of tradition and modernity.',
+      image: 'mumbai.jpg'
+    },
+    {
+      name: 'Delhi',
+      description: 'Delhi, the capital city of India, is a vibrant and historical metropolis. It is known for its rich cultural heritage, diverse cuisine, and bustling markets. Explore iconic landmarks such as the Red Fort, India Gate, and Qutub Minar. Delhi is a blend of tradition and modernity, offering a unique experience for every visitor.',
+      image: 'delhi.jpeg'
+    },
+    {
+      name: 'Kolkata',
+      description: 'Kolkata, the cultural capital of India, is famous for its literature, art, and festivals. Explore the historic Victoria Memorial, enjoy the traditional sweets, and experience the warmth of the people. Kolkata offers a unique blend of tradition and intellectualism.',
+      image: 'kolkata.jpg'
+    },
+    {
+      name: 'Chennai',
+      description: 'Chennai, the capital of Tamil Nadu, is known for its rich history and modern infrastructure. Visit the Marina Beach, explore ancient temples, and indulge in delicious South Indian cuisine. Chennai is a city that seamlessly combines tradition with a growing cosmopolitan vibe.',
+      image: 'chennai.jpg'
+    },
+    {
+      name: 'Hyderabad',
+      description: 'Hyderabad, the city of pearls, is famous for its historical monuments, vibrant markets, and delicious biryani. Explore the Charminar, visit the Golconda Fort, and savor the unique blend of Mughlai and Telugu cuisines. Hyderabad is a melting pot of culture and technology.',
+      image: 'hyderabad.jpg'
+    },
+    
+  ];
+
+  
+  function createAccordionItem(city) {
+    const accordionItem = document.createElement('div');
+    accordionItem.classList.add('accordion-item');
+
+    const header = document.createElement('div');
+    header.classList.add('accordion-header');
+    header.innerHTML = city.name;
+
+    const content = document.createElement('div');
+    content.classList.add('accordion-content');
+
+    const image = new Image();
+    image.src = `images/${city.image}`;
+    image.alt = city.name;
+
+    const description = document.createElement('p');
+    description.textContent = city.description;
+
+    content.appendChild(image);
+    content.appendChild(description);
+
+    accordionItem.appendChild(header);
+    accordionItem.appendChild(content);
+
+    accordionItem.addEventListener('click', () => {
+      accordionItem.classList.toggle('active');
+    });
+
+    return accordionItem;
+  }
+
+  // Function to initialize the accordion
+  function initializeAccordion() {
+    cities.forEach(city => {
+      const accordionItem = createAccordionItem(city);
+      accordionContainer.appendChild(accordionItem);
+    });
+  }
+
+  // Initialize the accordion
+  initializeAccordion();
+});
+
+</script>
+
+</body>
+</html>
