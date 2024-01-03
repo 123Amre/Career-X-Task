@@ -1,0 +1,101 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-y: 0;
+}
+.root {
+    background-image: url("./IMG/bg\ image.jpg");
+    background-size: cover;
+    
+
+}
+.navbar{
+    height: 10vh;
+    padding-top:1% ;
+    padding-left: 2vh;
+    padding-right: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.img-logo{
+    width: 14%;
+    color: #e50914;
+
+}
+.btn-sign-in{
+    padding-top:8px ;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    background-color: #e50914;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: fit-content;
+}
+.main-container{
+    width: 100%;
+    height: 90vh;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    
+}
+.main-titles-container{
+    width: 50%;
+    text-align: center;
+    color: white;
+
+}
+.main-title{
+    font-size: 3.2em;
+}
+.main-subtitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+
+}
+.main-call-to-action{
+    font-family: Arial, Helvetica, sans-serif;
+    font: 1.2em;
+}
+.email-container{
+    width: 55%;
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-email{
+    outline: none;
+    border: none;
+    padding: 20px 10px;
+    font-size: 1em;
+    
+}
+.btn-get{
+    cursor: pointer;
+    padding: 18px 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: fit-content;
+    background-color: #e50914;
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.btn-get:hover{
+    background-color: #e50914;
+}
+

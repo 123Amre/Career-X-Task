@@ -1,0 +1,131 @@
+*{
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    background-color: #999;
+    transition: 0.8s;
+
+}
+.box{
+    position: relative;
+    border-radius: 12px;
+    width: 330px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 18px;
+    background-color: #fcfcfc;
+    display: none;
+}
+.circle .register-head{
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 6px;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    border-color: #fff;
+
+}
+.circle .register-body{
+    display: inline-block;
+    width: 35px;
+    /* height: 20px; */
+    margin: 0 auto;
+    margin-top: 26px;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    border-color: #fff;
+    
+}
+.close{
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    color: tomato;
+    font-size: 34px;
+
+}
+.close:hover{
+    background-color: red;
+    border-radius: 0 12px 0 0;
+    color: #fcfcfc;
+    cursor: pointer;
+
+}
+.registration-box{
+    font-size: 30px;
+    margin-top: 63px;
+    margin-bottom: 40px;
+    color: #026948;
+    align-items: center;
+    font-weight: 5000;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+label{
+    display: block;
+    position: absolute;
+    font-size: 16px;
+    color: rgb(169, 171, 170);
+    margin-top: -62px;
+    padding-left: 18px;
+    text-align: left;
+    transition: 0.4s;
+
+}
+input{
+    width: 95%;
+    height: 42px;
+    margin: 10px 1px 28px 1px;
+    padding: 9px;
+    font-size: 18px;
+    color: #555;
+    border: rgba(128, 128, 128, 0.452) 1px solid;
+    outline: none;
+    border-radius: 5px;
+
+
+}
+input:focus~label,
+input:valid~label{
+    margin-top: -95px;
+    padding-left: 8px;
+    color: #026948;
+}
+.box .circle .box span{
+    display: inline-block;
+    position: absolute;
+
+}
+/*  */
+button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 10px 43px 10px 43px;
+    border: none;
+    border-radius: 32px;
+    font-size: 20px;
+    background-color: #026948;
+    color: #fcfcfc;
+
+}
+button:hover, button:focus{
+    cursor: pointer;
+    background-color: rgb(3, 145 , 144);
+    outline: rgb(2, 137, 108) 2px solid;
+}
