@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIK TIK CLOCK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="clock.jpg" type="jpeg">
+</head>
+<body>
+    <div class="main">
+        <div class="container-1 clickable" onclick="openPage('countdown.html')">
+            <p>COUNTDOWN</p>
+        </div>
+        <div class="container-2 clickable" onclick="openPage('stopwatch.html')">
+            <p>STOPWATCH</p>
+        </div>
+    </div>
+    <script>
+        function openPage(page) {
+    window.location.href = page;
+}
+    </script>
+</body>
+</html>

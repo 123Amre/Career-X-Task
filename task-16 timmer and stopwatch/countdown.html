@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOCK-countdown</title>
+    <link rel="stylesheet" href="countdown.css">
+    <link rel="icon" href="clock.jpg" type="jpeg">
+</head>
+<body>
+    <div class="container-1"><h3>COUNTDOWN</h3>
+        <div class="countdown">
+            <div id="hourBox" class="time-box">00</div>
+            <div id="minBox" class="time-box">00</div>
+            <div id="secBox" class="time-box">00</div>
+            <div id="milliSecBox" class="time-box">000</div>
+        </div>
+        <div class="set-timmer">
+            <label for="hourInput">Hours: </label>
+            <input type="number" id="hourInput" placeholder="0">
+            <label for="minInput">Minutes: </label>
+            <input type="number" id="minInput" placeholder="00">
+            <label for="secInput">Seconds: </label>
+            <input type="number" id="secInput" placeholder="00">
+            <label for="milliSecInput">Millisec: </label>
+            <input type="number" id="milliSecInput" placeholder="000">
+        </div>
+        <div class="btn-countdown">
+            <button id="startButton" onclick="startCountdown()">Start </button>
+            <button id="resetButton" onclick="resetCountdown()">Reset </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

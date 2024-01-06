@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    /* background-color: #f4f4f4; */
+    background-image: url('countdown.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.container-1 {
+    width: 60%;
+    backdrop-filter: blur(10px);
+    background: rgba(250, 250, 250, 0.2);
+    /* background-color: #3498db; */
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    
+}
+
+h3{
+    /* color:#6B3628; */
+    color: #FEF25E;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    /* border: 1px solid #fff; */
+    max-width: 200px; 
+    display: flex;
+    justify-content: center;
+    margin-left: 350px;
+    
+    
+
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.time-box {
+    backdrop-filter: blur(10px);
+    background: rgba(250, 250, 250, 0.2);
+    /* background-color: #fff; */
+    color: #333;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.set-timmer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label {
+    color: #fff;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+input {
+    backdrop-filter: blur(10px);
+    background: rgba(250, 250, 250, 0.2);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    width: 75px;
+    color: #fff;
+
+}
+
+.btn-countdown, .btn-stopwatch {
+    margin-top: 20px;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    display: flexbox;
+    justify-content: space-evenly;
+    /* align-items:; */
+    align-items: flex-start;
+
+}
+
+#startButton {
+    background-color: #FFA76D;
+    color: gray;
+}
+#startButton:hover{
+    background-color: #4F9D8D;
+    color: #fff;
+
+
+}
+.btn-countdown{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+#resetButton{
+    background-color: #FFA76D;
+    color: gray;
+    display: flex;
+    justify-content: center;
+} 
+#resetButton:hover{
+    background-color: #4F9D8D;
+    color: #fff;
+
+}
+
+

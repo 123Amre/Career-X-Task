@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('sand\ clock.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.main {
+    /* background-color: #fff; */
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 300px; 
+    margin: auto; 
+}
+
+.clickable {
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.container-1{
+    margin-bottom: 5px;
+    border-bottom-left-radius: 99px;
+    border-bottom-right-radius: 99px;
+    overflow: hidden;
+
+}
+.container-2{
+    margin-top: 5px;
+    border-top-right-radius: 99px;
+    border-top-left-radius: 99px;
+    overflow: hidden;
+}
+
+.clickable:hover {
+    /* background-image: url('sand.jpeg'); */
+    /* background-size: cover;  */
+    /* background-repeat: no-repeat;  */
+    background: linear-gradient(#b4983d,#f5a0ab);
+    /* background-color: #149ddd;  */
+    color: #fff;
+}
+
